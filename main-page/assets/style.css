@@ -1,6 +1,7 @@
 :root {
   --main-color: #FFF;
   --grey: #FFFFFF99;
+  --grey2: #7F7F7F;
   --red: #FF291C;
   /* --hover: linear-gradient(88.87deg, #FF271A 0.25%, #FF5609 82.13%); */
   --hover: linear-gradient(247deg, #FF7B1C 19.48%, #FF601C 40.24%, #FF291C 71.13%, #FF0F00 97.4%);
@@ -70,7 +71,7 @@ a {
   align-items: center; 
   list-style: none;
   padding: 0;
-  gap: 10px;
+  gap: 30px;
 }
 .header__nav--item {
   text-transform: uppercase;
@@ -80,25 +81,61 @@ a {
   font-weight: 700;
   font-size: 20px;
   transition: all 0.3s;
+  padding: 10px 0;
+  /* border-bottom: 2px solid transparent; */
 }
 .header__nav--item:hover,
 .entry__link:hover,
 .bottom__link:hover {
   color: var(--red);
   cursor: pointer;
-  text-decoration: underline 2px var(--red);
+  /*  */
+}
+.entry__link:hover,
+.bottom__link:hover {
+  border-bottom: 2px solid var(--red);
+}
+.header__nav--dropped-menu-container {
+  position: relative;
+  /* margin-bottom: 20px;*/
+}
+.header__nav--dropped-menu-container:hover .header__nav--dropped-menu {
+  display: flex;
+  color: var(--main-color);
+}
+.header__nav--dropped-menu {
+  display: none;
+  position: absolute;
+  margin-top: -10px;
+  list-style: none;
+  /* padding-left: 0; */
+  width: max-content;
+  padding: 20px;
+  top: 50px;
+  left: -38px;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  background-color: #2c2b2b;
+  border-top: 2px solid var(--red);
+} 
+.header__nav--dropped-menu-item:hover {
+  text-decoration: underline;
+}
+.dropped-menu-position {
+  left: -150px;
 }
 
 
 .entry {
   background: #151515;
-  padding: 0 0 300px 0;
+  padding: 150px 0;
 }
 .entry__main-title {
   text-align: center;
   font-family: var(--main-font);
   font-size: 60px;
-  margin-top: 0;
+  /* margin-top: 0; */
 }
 .entry__sub-title {
   font-family: var(--main-font);
@@ -248,4 +285,49 @@ a {
 }
 .partners img {
   display: block;
+}
+
+
+.footer__item-center,
+.footer__item {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__item-center {
+  align-items: center;
+}
+.footer__entry-title {
+  font-size: 60px;
+}
+.footer__sub-title {
+  color: var(--grey2);
+  text-transform: uppercase;
+}
+.footer__text--start {
+  text-align: start;
+}
+.footer__text--center {
+  text-align: center;
+}
+.footer__text--end {
+  text-align: end;
+}
+.footer__locate-text span {
+  display: block;
+  text-align: end;
+}
+.footer__svg-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer__img-svg {
+  cursor: pointer;
+}
+.footer__img-svg path {
+  fill: #F0EEEB;
+  transition: all 0.3s;
+}
+.footer__img-svg:hover path {
+  fill: var(--red);
 }
