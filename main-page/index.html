@@ -17,7 +17,7 @@
   <body>
     <header class="header--wrapper">
       <div class="header container">
-        <img src="./assets/images/svg/logo-header.svg" alt="main-logo" />
+        <img class="header__main-logo" src="./assets/images/svg/logo-header.svg" alt="main-logo" />
         <nav class="">
           <ul class="header__nav">
             <li class="header__nav--item header__nav--dropped-menu-container">
@@ -35,11 +35,21 @@
                 </li>
               </ul>
             </li>
-            <li class="header__nav--item">
-              <a href="#">What.</a>
+            <li class="header__nav--item toggle-text-container">
+              <a href="#">
+                <div class="nav__hover-text">
+                  <span class="nav__visible-text">what.</span>
+                  <span class="nav__hidden-text">what we do</span>
+                </div>
+              </a>
             </li>
-            <li class="header__nav--item">
-              <a href="#">We.</a>
+            <li class="header__nav--item toggle-text-container">
+              <a href="#">
+                <div class="nav__hover-text">
+                  <span class="nav__visible-text">we.</span>
+                  <span class="nav__hidden-text">who we are</span>
+                </div>
+              </a>
             </li>
             <li class="header__nav--item header__nav--dropped-menu-container">
               Create.
@@ -58,6 +68,80 @@
             </li>
           </ul>
         </nav>
+        <div class="burger-menu">
+          <span class="burger-menu__line burger-menu__line--top"></span>
+          <span class="burger-menu__line burger-menu__line--mid"></span>
+          <span class="burger-menu__line burger-menu__line--bottom"></span>
+        </div>
+       
+      </div>
+      <div class="mobile-menu">
+        <nav class="mobile-nav">
+          <img class="header__main-logo--mobile" src="./assets/images/svg/logo-header.svg" alt="main-logo" />
+          <ul class="mobile-menu__list">
+            <li class="header__nav--item header__nav--dropped-menu-container">
+              Look. 
+              <ul class="header__nav--dropped-menu">
+                <li class="header__nav--dropped-menu-item">
+                  <a href="#">
+                    our cases
+                  </a>
+                </li>
+                <li class="header__nav--dropped-menu-item">
+                  <a href="#">
+                    feature project
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav--item toggle-text-container">
+              <a href="#">
+                <div class="nav__hover-text">
+                  <span class="nav__visible-text">what.</span>
+                  <span class="nav__hidden-text">what we do</span>
+                </div>
+              </a>
+            </li>
+            <li class="header__nav--item toggle-text-container">
+              <a href="#">
+                <div class="nav__hover-text">
+                  <span class="nav__visible-text">we.</span>
+                  <span class="nav__hidden-text">who we are</span>
+                </div>
+              </a>
+            </li>
+            <li class="header__nav--item header__nav--dropped-menu-container">
+              Create.
+              <ul class="header__nav--dropped-menu dropped-menu-position">
+                <li class="header__nav--dropped-menu-item">
+                  <a href="#">
+                    contact us
+                  </a>
+                </li>
+                <li class="header__nav--dropped-menu-item">
+                  <a href="#">
+                    resource library
+                  </a>
+                </li>
+              </ul>
+            </li> 
+          </ul>
+          <div class="header__mobile-imgs">
+            <a href="#">
+              <img src="./assets/images/svg/logo-twitter.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/images/svg/logo-instagram.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/images/svg/logo-vimeo.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/images/svg/logo-youtube.svg" alt="">
+            </a>
+          </div>  
+        </nav>
+        
       </div>
     </header>
     <div style="height: 120px; background: #151515"></div>
@@ -98,15 +182,13 @@
               <div class="main-link-container">
                 <img
                   class="main-link-container__img"
-                  src="/main-page/assets/images/main-page-1.png"
+                  src="/main-page/assets/images/main-page-columbia.jpg"
                   alt=""
                 />
                 <div class="main-link-container__text-container">
-                  <h3 class="title-h3">adventure club</h3>
+                  <h3 class="title-h3">COLUMBIA SPORTWEAR GLOBAL SKI TITANIUM</h3>
                   <p class="p-20 text-upper">
-                    Branding. Logo Design. Film Documentary. Tour Visuals. Show
-                    Experience. Video Animation. Creative Direction. Tour
-                    Management. Pre- & Post-Production.
+                    Commercial Film. Production.
                   </p>
                 </div>
               </div>
@@ -115,30 +197,26 @@
               <div class="main-link-container">
                 <img
                   class="main-link-container__img"
-                  src="/main-page/assets/images/main-page-1.png"
+                  src="/main-page/assets/images/main-page-troyboy.png"
                   alt=""
                 />
                 <div class="main-link-container__text-container">
-                  <h3 class="title-h3">adventure club</h3>
+                  <h3 class="title-h3">TROYBOI</h3>
                   <p class="p-20 text-upper">
-                    Branding. Logo Design. Film Documentary. Tour Visuals. Show
-                    Experience. Video Animation. Creative Direction. Tour
-                    Management. Pre- & Post-Production.
+                    Live Producer Panel.  Show Experience.  Video Curation.  Content Creation.
                   </p>
                 </div>
               </div>
               <div class="main-link-container">
                 <img
                   class="main-link-container__img"
-                  src="/main-page/assets/images/main-page-1.png"
+                  src="/main-page/assets/images/main-page-inspered-styling.png"
                   alt=""
                 />
                 <div class="main-link-container__text-container">
-                  <h3 class="title-h3">adventure club</h3>
+                  <h3 class="title-h3">INSPIRED STYLING</h3>
                   <p class="p-20 text-upper">
-                    Branding. Logo Design. Film Documentary. Tour Visuals. Show
-                    Experience. Video Animation. Creative Direction. Tour
-                    Management. Pre- & Post-Production.
+                    Logo  Design.      Comprehensive  Branding.      Web  Development.      Content  Curation.      Marketing  Assets..
                   </p>
                 </div>
               </div>
@@ -161,11 +239,12 @@
               </p>
               <a href="#">
                 <button class="btn">
-                  explore more
+                  <span class="btn__text">explore more</span> 
+                  <div class="btn__hovered-bg btn__hovered-bg--pos-1"></div>
                 </button>
               </a>
             </div>
-            <img src="" alt="">
+            <img class="flex-container__hidden-img" src="./assets/images/svg/what-we-do.svg" alt="">
           </div>
           <div class="flex-container">
             <div class="flex-container__img-container">
@@ -182,7 +261,8 @@
               </p>
               <a href="#">
                 <button class="btn">
-                  more about us
+                  <span class="btn__text">more about us</span> 
+                  <div class="btn__hovered-bg btn__hovered-bg--pos-2"></div>
                 </button>
               </a>
             </div>
@@ -196,20 +276,47 @@
           </h2>
           <div class="flex-container articles">
             <div class="article-item">
-              <img class="article-item__img" src="/main-page/assets/images/main-page-article-img.png" alt="">
+              <div class="article-item__img-container">
+                <img class="article-item__img" src="/main-page/assets/images/main-page-article-img.png" alt="">
+                <div class="article-item__hovered-img--container">
+                  <div class="article-item__hovered-img--circle">
+                    <img class="article-item__hovered-img--arrow" src="./assets/images/svg/hovered-arrow.svg" alt="">
+                  </div>
+                </div>
+                <div class="article-item__hovered-bg"></div>
+
+              </div>
               <p class="p-20 article-item__text ">
                 The Complete Guide to help you with Film Editing
               </p>
             </div>
             <div class="article-item">
-              <img class="article-item__img" src="/main-page/assets/images/main-page-article-img.png" alt="">
-              <p class="p-20 article-item__text">
+              <div class="article-item__img-container">
+                <img class="article-item__img" src="/main-page/assets/images/main-page-library-img-2.png" alt="">
+                <div class="article-item__hovered-img--container">
+                  <div class="article-item__hovered-img--circle">
+                    <img class="article-item__hovered-img--arrow" src="./assets/images/svg/hovered-arrow.svg" alt="">
+                  </div>
+                </div>
+                <div class="article-item__hovered-bg"></div>
+
+              </div>
+              <p class="p-20 article-item__text ">
                 The Complete Guide to help you with Film Editing
               </p>
             </div>
             <div class="article-item">
-              <img class="article-item__img" src="/main-page/assets/images/main-page-article-img.png" alt="">
-              <p class="p-20 article-item__text">
+              <div class="article-item__img-container">
+                <img class="article-item__img" src="/main-page/assets/images/main-page-library-img-3.png" alt="">
+                <div class="article-item__hovered-img--container">
+                  <div class="article-item__hovered-img--circle">
+                    <img class="article-item__hovered-img--arrow" src="./assets/images/svg/hovered-arrow.svg" alt="">
+                  </div>
+                </div>
+                <div class="article-item__hovered-bg"></div>
+
+              </div>
+              <p class="p-20 article-item__text ">
                 The Complete Guide to help you with Film Editing
               </p>
             </div>
@@ -238,7 +345,7 @@
 
     <footer class="container inner-container footer">
       <div class="footer__item-center">
-        <img src="./assets/images/svg/logo-footer.svg" alt="main-logo-footer">
+        <img class="footer-main-logo" src="./assets/images/svg/logo-footer.svg" alt="main-logo-footer">
         <div>
           <p class="entry__sub-title ">
             Let's <span class="entry__link footer__entry-title">Create.</span>
@@ -250,17 +357,51 @@
           <p class="footer__sub-title footer__text--start">NAVIGATE</p>
           <nav class="">
             <ul class="header__nav">
-              <li>
-                <a class="header__nav--item" href="#">Look.</a>
+              <li class="header__nav--item header__nav--dropped-menu-container">
+                Look. 
+                <ul class="header__nav--dropped-menu">
+                  <li class="header__nav--dropped-menu-item">
+                    <a href="#">
+                      our cases
+                    </a>
+                  </li>
+                  <li class="header__nav--dropped-menu-item">
+                    <a href="#">
+                      feature project
+                    </a>
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a class="header__nav--item" href="#">What.</a>
+              <li class="header__nav--item toggle-text-container">
+                <a href="#">
+                  <div class="nav__hover-text">
+                    <span class="nav__visible-text">what.</span>
+                    <span class="nav__hidden-text">what we do</span>
+                  </div>
+                </a>
               </li>
-              <li>
-                <a class="header__nav--item" href="#">We.</a>
+              <li class="header__nav--item toggle-text-container">
+                <a href="#">
+                  <div class="nav__hover-text">
+                    <span class="nav__visible-text">we.</span>
+                    <span class="nav__hidden-text">who we are</span>
+                  </div>
+                </a>
               </li>
-              <li>
-                <a class="header__nav--item" href="#">Create.</a>
+              <li class="header__nav--item header__nav--dropped-menu-container">
+                Create.
+                <ul class="header__nav--dropped-menu dropped-menu-position">
+                  <li class="header__nav--dropped-menu-item">
+                    <a href="#">
+                      contact us
+                    </a>
+                  </li>
+                  <li class="header__nav--dropped-menu-item">
+                    <a href="#">
+                      resource library
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
@@ -318,5 +459,6 @@
       </div>
     </footer>
 
+    <script src="./script.js"></script>
   </body>
 </html>
